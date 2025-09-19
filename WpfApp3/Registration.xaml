@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
-        Title="Registration" Height="450" Width="800">
-    <Grid>
-        
+        Title="Registration" Height="250" Width="600">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" >
+            <TextBlock Text="Спортсмен" Width="100" VerticalAlignment="Center"/>
+            <ComboBox x:Name="cmbAthlete" Width="350" DisplayMemberPath="LastName"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="0,8,0,0">
+            <TextBlock Text="Тренировка" Width="100" VerticalAlignment="Center"/>
+            <ComboBox x:Name="cmbTraining" Width="350" DisplayMemberPath="Title"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,8,0,0">
+            <TextBlock Text="Оценка (0–5)" Width="100" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbScore" Width="60"/>
+            <TextBlock Text="Комментарий" Width="100" VerticalAlignment="Center" Margin="16,0,0,0"/>
+            <TextBox x:Name="tbComment" Width="200"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Width="100" Content="Отмена" IsCancel="True"/>
+            <Button Width="140" Content="Зарегистрировать" IsDefault="True" />
+        </StackPanel>
     </Grid>
 </Window>

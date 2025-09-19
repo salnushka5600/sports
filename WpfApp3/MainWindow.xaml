@@ -8,18 +8,21 @@
         Title="MainWindow" Height="450" Width="800">
 
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="40*"/>
-        </Grid.ColumnDefinitions>
-
-        <StackPanel Grid.ColumnSpan="2" >
-            <Label Content="Ближайшие тренировки" HorizontalAlignment="Center" FontSize="20"/>
-            <ScrollViewer  />
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="8" >
+            <TextBox x:Name="tbSearch" Width="260"  TextChanged="OnSearchChanged"/>
+            <Button Content="Обновить" Click="Refresh_Click"/>
         </StackPanel>
-    </Grid>
+        <DataGrid x:Name="grid" Margin="8" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="2*"/>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Datetime, StringFormat=g}" Width="*"/>
+                <DataGridTextColumn Header="Длительность" Binding="{Binding Duration}" Width="*"/>
+                <DataGridTextColumn Header="Тип" Binding="{Binding Type}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </DockPanel>
 
 
 
