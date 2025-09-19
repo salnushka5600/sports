@@ -55,7 +55,7 @@ namespace WpfApp3
             Workouts = db.Workouts.ToList();
             //db.Suppliers.ToList(); // поставщики сохранятся в dbcontext
             SelectProgresses();
-            DataContext = this;
+            DataContext = this;fd
         }
 
         private void UpdateProgress(object sender, RoutedEventArgs e)
