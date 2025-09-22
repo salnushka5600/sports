@@ -10,8 +10,8 @@
 
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="8" >
-            <TextBox x:Name="tbSearch" Width="260"  TextChanged="OnSearchChanged"/>
-            <Button Content="Обновить" Click="Refresh_Click"/>
+            <TextBox x:Name="tbSearch" Width="260"  />
+            <Button Content="Обновить" />
         </StackPanel>
         <DataGrid x:Name="grid" Margin="8" AutoGenerateColumns="False" >
             <DataGrid.Columns>

@@ -67,10 +67,10 @@ namespace WpfApp3
             db = new SportsContext();
             // костыль для исключения добавления уже существующих объектов
             // в связанные таблицы
-            //InsertProgress.IdAthlet = InsertProgress.IdAthlet.Id;
-            //InsertProgress.Athlet = null;
-            //InsertProgress.IdWorkout = InsertProgress.Workout.Id;
-            //InsertProgress.Workout = null;
+            InsertProgress.IdAthlet = InsertProgress.IdAthlet.Id;
+            InsertProgress.Athlet = null;
+            InsertProgress.IdWorkout = InsertProgress.Workout.Id;
+            InsertProgress.Workout = null;
             // чаще должен быть вариант, что DbContext уже содержит существующие данные
             // метод Add добавляет всю иерархию объекта в отслеживание
             db.Progresses.Add(InsertProgress);
@@ -81,14 +81,14 @@ namespace WpfApp3
 
         private void SelectProgresses()
         {
-            //var query = db.Progresses
-                        //.Include(s => s.Athlet)
-                        //.Include(s => s.Workut)
-                        //.Where(s => s.Count == 1) // условие
-                        //.Skip(1)   // пропуск кол-ва записей
-                        //.Take(1);   // ограничение кол-ва записей
+            var query = db.Progresses
+                        .Include(s => s.Athlet)
+                        .Include(s => s.Workut)
+                        .Where(s => s.Count == 1) // условие
+                        .Skip(1)   // пропуск кол-ва записей
+                        .Take(1);   // ограничение кол-ва записей
 
-            //Progresses = query.ToList();
+            Progresses = query.ToList();
         }
 
         private void RemoveProgress(object sender, RoutedEventArgs e)
