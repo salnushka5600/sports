@@ -55,5 +55,37 @@ namespace Sports
             }
             
         }
+
+        private void Filtrrr(object sender, RoutedEventArgs e)
+        {
+            Filtr window = new Filtr();
+            Hide();
+            window.ShowDialog();
+            Show();
+        }
+
+        private void AthletDob(object sender, RoutedEventArgs e)
+        {
+            AthletDob window = new AthletDob();
+            Hide();
+            window.ShowDialog();
+            Show();
+        }
+
+        private void Registration(object sender, RoutedEventArgs e)
+        {
+            Registration window = new Registration();
+            Hide();
+            window.ShowDialog();
+            Show();
+        }
+
+        private void WorkoutDob(object sender, RoutedEventArgs e)
+        {
+            WorkoutDob window = new WorkoutDob();
+            Hide();
+            window.ShowDialog();
+            Show();
+        }
     }
 }
