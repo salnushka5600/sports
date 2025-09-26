@@ -15,25 +15,25 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" >
-            <TextBlock Text="Спортсмен" Width="100" VerticalAlignment="Center"/>
-            <ComboBox x:Name="cmbAthlete" Width="350" DisplayMemberPath="LastName"/>
+            <TextBlock Text="Спортсмен" Width="100" VerticalAlignment="Center" />
+            <ComboBox x:Name="cmbAthlete" Width="350" DisplayMemberPath="LastName" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="0,8,0,0">
-            <TextBlock Text="Тренировка" Width="100" VerticalAlignment="Center"/>
-            <ComboBox x:Name="cmbTraining" Width="350" DisplayMemberPath="Title"/>
+            <TextBlock Text="Тренировка" Width="100" VerticalAlignment="Center" />
+            <ComboBox x:Name="cmbTraining" Width="350" DisplayMemberPath="Title" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,8,0,0">
             <TextBlock Text="Оценка (0–5)" Width="100" VerticalAlignment="Center"/>
-            <TextBox x:Name="tbScore" Width="60"/>
+            <TextBox x:Name="tbScore" Width="60" Background="Pink"/>
             <TextBlock Text="Комментарий" Width="100" VerticalAlignment="Center" Margin="16,0,0,0"/>
-            <TextBox x:Name="tbComment" Width="200"/>
+            <TextBox x:Name="tbComment" Width="200" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
-            <Button Width="100" Content="Отмена" IsCancel="True"/>
-            <Button Width="140" Content="Зарегистрировать" IsDefault="True" />
+            <Button Width="100" Content="Отмена" IsCancel="True" Background="Pink"/>
+            <Button Width="140" Content="Зарегистрировать" IsDefault="True" Background="Pink" />
         </StackPanel>
     </Grid>
 </Window>

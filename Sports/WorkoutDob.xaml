@@ -17,22 +17,22 @@
 
         <StackPanel Orientation="Horizontal" >
             <TextBlock Text="Название" Width="110" VerticalAlignment="Center"/>
-            <TextBox Width="320" Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="320" Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="0,8,0,0">
             <TextBlock Text="Дата" Width="110" VerticalAlignment="Center"/>
-            <DatePicker SelectedDate="{Binding Datetime}" Width="160"/>
+            <DatePicker SelectedDate="{Binding Datetime}" Width="160" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal"  Margin="0,8,0,0">
             <TextBlock Text="Длительность (мин)" Width="110" VerticalAlignment="Center"/>
-            <TextBox Width="120" Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="120" Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="3" Orientation="Horizontal"  Margin="0,8,0,0">
             <TextBlock Text="Тип" Width="110" VerticalAlignment="Center"/>
-            <ComboBox Width="200" SelectedItem="{Binding Type}">
+            <ComboBox Width="200" SelectedItem="{Binding Type}" Background="Pink">
                 <ComboBoxItem Content="Кардио"/>
                 <ComboBoxItem Content="Силовая"/>
                 <ComboBoxItem Content="Техническая"/>
@@ -40,8 +40,8 @@
         </StackPanel>
 
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
-            <Button Width="100" Content="Отмена" IsCancel="True"/>
-            <Button Width="140" Content="Добавить" IsDefault="True" />
+            <Button Width="100" Content="Отмена" IsCancel="True" Background="Pink"/>
+            <Button Width="140" Content="Добавить" IsDefault="True" Background="Pink" />
         </StackPanel>
     </Grid>
 </Window>

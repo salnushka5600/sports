@@ -8,13 +8,13 @@
         Title="Filtr" Height="450" Width="800">
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="8" >
-            <TextBox x:Name="tbSearch" Width="260"  />
-            <Button Content="Обновить" />
-            <Button Content="переход" Click="Register"/>
+            <TextBox x:Name="tbSearch" Width="260" Background="Pink" />
+            <Button Content="Обновить" Background="Pink"/>
+            <Button Content="переход" Click="Register" Background="Pink"/>
         </StackPanel>
-        <DataGrid x:Name="grid" Margin="8" AutoGenerateColumns="False" ItemsSource="{Binding Workout}" >
+        <DataGrid x:Name="grid" Margin="8" AutoGenerateColumns="False" ItemsSource="{Binding Workout}" Background="Pink" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="2*"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="2*" />
                 <DataGridTextColumn Header="Дата" Binding="{Binding Datetime, StringFormat=g}" Width="*"/>
                 <DataGridTextColumn Header="Длительность" Binding="{Binding Duration}" Width="*"/>
                 <DataGridTextColumn Header="Тип" Binding="{Binding Type}" Width="*"/>

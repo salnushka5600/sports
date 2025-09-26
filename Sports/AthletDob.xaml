@@ -18,27 +18,27 @@
 
         <StackPanel Orientation="Horizontal" >
             <TextBlock Text="Имя" Width="110" VerticalAlignment="Center"/>
-            <TextBox Width="320" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="320" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,8,0,0">
             <TextBlock Text="Фамилия" Width="110" VerticalAlignment="Center"/>
-            <TextBox Width="320" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="320" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal"  Margin="0,8,0,0">
-            <TextBlock Text="Дата рождения" Width="110" VerticalAlignment="Center"/>
-            <DatePicker Width="160" SelectedDate="{Binding Birthday}"/>
+            <TextBlock Text="Дата рождения" Width="110" VerticalAlignment="Center" />
+            <DatePicker Width="160" SelectedDate="{Binding Birthday}" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,8,0,0">
             <TextBlock Text="Категория" Width="110" VerticalAlignment="Center"/>
-            <TextBox Width="320" Text="{Binding Category, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="320" Text="{Binding Category, UpdateSourceTrigger=PropertyChanged}" Background="Pink"/>
         </StackPanel>
 
         <StackPanel Grid.Row="4" Orientation="Horizontal"  Margin="0,8,0,0">
             <TextBlock Text="Уровень" Width="110" VerticalAlignment="Center"/>
-            <ComboBox Width="200" SelectedItem="{Binding Level, Mode=TwoWay}">
+            <ComboBox Width="200" SelectedItem="{Binding Level, Mode=TwoWay}" Background="Pink">
                 <ComboBoxItem Content="Новичок"/>
                 <ComboBoxItem Content="Средний"/>
                 <ComboBoxItem Content="Продвинутый"/>
@@ -46,8 +46,8 @@
         </StackPanel>
 
         <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right"  Margin="0,12,0,0">
-            <Button Width="100" Content="Отмена" IsCancel="True"/>
-            <Button Width="140" Content="Добавить" IsDefault="True" />
+            <Button Width="100" Content="Отмена" IsCancel="True" Background="Pink"/>
+            <Button Width="140" Content="Добавить" IsDefault="True" Background="Pink" />
         </StackPanel>
     </Grid>
 </Window>
