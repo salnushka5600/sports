@@ -26,10 +26,10 @@
         </Grid.ColumnDefinitions>
         <Label Content="Спортсмены" FontSize="50" Grid.ColumnSpan="3"  Height="100" VerticalAlignment="Top" HorizontalAlignment="Center"   Foreground="White"/>
 
-        <Button Content ="Фильтр" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="1" Background="Pink"   Click="Filtrrr" Opacity="20" />
-        <Button Content ="Добавить атлета" Width="143" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2" Background="Pink" Click="AthletDob" />
-        <Button Content ="Регистрация" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Background="Pink"  Click="Registration" />
-        <Button Content ="Добавить тренировку" Width="143" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="2" Background="pink"  Click="WorkoutDob"/>
+        <Button Content ="Фильтр" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="1" Background="Pink"   Click="Filtrrr" Opacity="20"  FontStyle="Italic"/>
+        <Button Content ="Добавить атлета" Width="143" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2" Background="Pink" Click="AthletDob" FontStyle="Italic" />
+        <Button Content ="Регистрация" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Background="Pink"  Click="Registration"  FontStyle="Italic"/>
+        <Button Content ="Добавить тренировку" Width="143" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="2" Background="pink"  Click="WorkoutDob" FontStyle="Italic"/>
         
 
     </Grid>
